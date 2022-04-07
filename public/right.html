@@ -1,0 +1,52 @@
+  <br>
+  <div id="clock">
+<p>
+<p id="hours"></p>
+<p id="minutes"></p>
+<p id="seconds"></p>
+</p>
+</div>
+<script src="/scripts/clock.js"></script>
+
+<br>
+
+<p class="blink_me"><a href="https://neocities.org/site/kowakawaii" target="_blank">follow my neocities</a></p>
+<a href="https://kowakawaii.neocities.org/"><img src="/images/mystuff/button.gif"></a>
+
+<br><br>
+
+<h1>site stats</h1>
+
+            <p><span id="hitcount"></span> oz. of blood</p>
+
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var site_data = JSON.parse(this.responseText);
+      var num_arr = site_data.info.views.toString().split("");
+      var num_str = "";
+      for (i = 0; i < num_arr.length; i++) {
+        num_str += num_arr[i];
+        if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+      }
+      document.getElementById("hitcount").innerHTML = num_str;
+    }
+  };
+  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=kowakawaii", true);
+  xhttp.send();
+</script>
+
+<p>mood: <a href="https://www.imood.com/users/sangredere"><img src="https://moods.imood.com/display/uname-sangredere/fg-1c0812/trans-1/imood.gif" alt="The current mood of sangredere at www.imood.com" border="0"></a></p>
+
+<p>rss: <a href="https://kowakawaii.moe/rss.xml" target="_blank"><img src="/images/rss.png"> &#x2740;୭</a></p>
+
+<br>
+
+<h1>mini cliques</h1>
+
+<marquee scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" style="margin: 0px 10px 0px 5px;">
+	<a href="https://kowakawaii.moe/"><img src="/images/mystuff/scarycute.png"></a>
+	<a href="https://dust.kuchiki.net/cliques.php"><img src="/images/cliques/yuri.gif"></a>
+	<a href="https://dust.kuchiki.net/cliques.php"><img src="/images/cliques/slice.gif"></a>
+</marquee>

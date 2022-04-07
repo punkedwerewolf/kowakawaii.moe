@@ -1,0 +1,240 @@
+/* cursor */
+ 
+html, * {
+   cursor: url('/gyaru/images/normal.cur'), auto;
+}
+
+a, a:hover {
+  cursor: url('/gyaru/images/link.cur'), auto;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, pre, s, del, li {
+  cursor: url('/gyaru/images/text.cur'), auto;
+}
+   
+/* fonts */
+
+@font-face {
+    font-family: 'mikiyu';
+    src: url('/gyaru/fonts/mikiyu.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mkpop';
+    src: url('/gyaru/fonts/mkpop.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* this is called a CSS reset, it removes default styles from your page */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* meat and potatoes */
+
+body {
+	background-color: #e2a689;
+	font-family: 'mkpop';
+	color: #94382a;
+	background-image: url('/gyaru/images/bgs/gradbg.gif');
+	background-size: cover;
+	height: 100%;
+	font-size: 18px;
+	line-height: 20px;
+	overflow-x: hidden;
+}
+
+.container {
+	float: right;	
+  display: grid;
+  grid-template-columns: 113px 510px 30px 130px 30px;
+  grid-template-rows: 400px max-content;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header header header"
+	". content . nav .";
+}
+
+.header { 
+	grid-area: header; 
+}
+
+#header {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 813px;
+	height: 610px;
+	background-size: 813px 610px;
+	background-image: url('/gyaru/images/header.png');
+	background-repeat: no-repeat;	
+	z-index: 9999;
+}
+
+.content { 
+	grid-area: content;
+}
+
+#content {
+	min-height: 500px;
+	height: auto;
+	border-right: 3px dashed #94382a;
+	border-left: 3px dashed #94382a;
+	background-color: #fff;
+	padding: 190px 10px 0px 10px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.nav {  
+	grid-area: nav; 
+}
+
+#nav {  
+	min-height: 350px;
+	height: auto;
+	border-right: 3px dashed #94382a;
+	border-left: 3px dashed #94382a;
+	background-color: #fff;
+	padding-top: 190px;
+	border-radius: 5px;
+}
+
+#footer {
+	height: auto;
+	position: relative;
+	bottom: 0px;
+	margin: 50px 30px 0px 30px;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+}
+
+/* nav */
+
+#nav ul {
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav a.list {
+	display: block;
+	margin: 5px auto;
+	padding: 2px;
+	background-color: #e38375;
+	border: #94382a dashed 1px;
+	text-align: center;
+	width: 110px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+#nav a:hover.list {
+	transform: translate(-2px, -2px);
+	background-color: #Efb7b0;
+	color: #fff;
+	font-style: normal;
+}
+
+/* misc styles */
+
+h1 {
+    font-family: 'mikiyu';
+	float: right;
+	color: #e39ca8;
+	font-size:40px;
+}
+
+h1::first-letter {
+	font-size: 45px
+}
+
+h2 {
+	font-size: 35px;
+	background-color: #dc9c74;
+	background-size: 100% auto;
+	border-top: 1px dashed #94382a;
+	border-bottom: 1px dashed #94382a;
+	text-align: center;
+	padding: 5px;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+h4 {
+	font-size: 140%;
+}
+
+h5 {
+	font-size: 130%;
+}
+
+h6 {
+	font-size: 120%;
+}
+
+strong {
+	font-weight: bold;
+	color: #ab2713;
+	font-size: 20px;
+}
+
+span {
+	font-weight: regular;
+	color: #e87641;
+}
+
+a {
+	color:#d7956b;
+	font-weight:normal;
+}
+
+a:hover {
+ color: #d7956b;
+ font-weight: normal;
+ text-decoration: none;
+ font-style: italic;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none; 
+  color: #B18061;
+}
+
+::selection {
+  background: rgba(255,255,255,0);
+  color: #E1C1AF;
+}

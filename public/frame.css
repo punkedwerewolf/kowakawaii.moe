@@ -1,0 +1,314 @@
+ /*cursor shit*/
+ 
+html, * {
+   cursor: url('/images/normal.cur'), auto;
+}
+
+a, a:hover {
+  cursor: url('/images/link.gif'), auto;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, pre, s, del, li {
+  cursor: url('/images/text.gif'), auto;
+}
+  
+/*font shit*/
+
+@font-face {
+    font-family: 'cherish';
+    src: url('/fonts/cherish-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* this is called a CSS reset, it removes default styles from your page */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 17px;
+	line-height: 20px;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*meat and potatoes*/
+
+body {
+	font-family: 'cherish';
+	color: #823042;
+	height: 100%;
+	font-size: 17px;
+	line-height: 20px;
+	text-align: center;
+	zoom: 97%;
+}
+
+/*about layout*/
+
+#container {
+	width: 530px;
+	height: 520px;
+	margin: auto;
+	padding: 0px;
+	position: relative;
+	margin-top: 5px;
+}
+
+#blinkies {
+	border: 1px solid transparent;
+	position: absolute;
+	height: 520px;
+	width: 150px;
+	line-height: 0px;
+}
+
+#blurb1 {
+	border: 1px solid transparent;
+	position: absolute;
+	height: 170px;
+	width: 230px;
+	left: 150px;
+	overflow-y: scroll;
+}
+
+#bodypillow {
+	border: 1px solid transparent;
+	position: absolute;
+	height: 352px;
+	width: 150px;
+	left: 380px;
+}
+
+#blurb2 {
+	border: 1px solid transparent;
+    position: absolute;
+    height: 182px;
+    width: 230px;
+    left: 150px;
+    top: 170px;
+    overflow-y: scroll;
+}
+
+#userbars {
+	border: 1px solid transparent;
+	position: absolute;
+	height: 38px;
+	width: 380px;
+	left: 150px;
+	top: 352px;
+	line-height: 0px;
+}
+
+#fanlistings {
+	border: 1px solid transparent;
+	position: absolute;
+	height: 130px;
+	width: 380px;
+	left: 150px;
+	top: 390px;
+	line-height: 0px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+
+#blurb1::-webkit-scrollbar, #blurb2::-webkit-scrollbar {
+height:12px;width:17px;
+background: #a76375;
+}
+
+#blurb1::-webkit-scrollbar-thumb, #blurb2::-webkit-scrollbar-thumb {   
+background-image:url(/images/dottedbg.png);
+border:1px solid #953f4f; 
+
+-webkit-border-radius:0ex; 
+-webkit-box-shadow:0px 0px 0px rgba(0,0,0,0.75)
+}
+
+#blurb1::-webkit-scrollbar-corner, #blurb2::-webkit-scrollbar-corner { 
+background:#transparent
+}
+/* diary css */
+
+.page {
+    width: 400px;
+    height: 412px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    display: block;
+    background-image: url(images/diary/diarypage.png);
+    background-repeat: no-repeat;
+    background-size: 400px 412px;
+}
+
+.form-panel {
+    margin: 0px;
+    font-size: 17px;
+    line-height: 13px;
+}
+
+.form-panel:not(.active) {
+    display:none;
+}
+
+.paw:hover { 
+	animation: link .5s ease-out forwards;
+  cursor: url('/images/help.cur'), auto;
+}
+
+@keyframes link {
+  0% {
+	transform: scale(1);
+  }
+  100% {
+	transform: scale(1.1);
+  }
+}
+
+/* sticker page css */
+
+#stickercard {
+	height: 200px;
+	width: 300px;
+	background-image: url('/images/sticker/stickercard.gif');
+	position: relative;
+	margin: auto;
+}
+
+/* Scrollbar Styling */
+
+::-webkit-scrollbar{
+	width: 0px;
+}
+
+/*for some kind of blinking animation */
+
+.blink_me {
+	animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+/*table stuffs*/
+
+table {
+	background-color: #a76375;
+	border: double 5px #953d50;
+	border-radius: 20px;
+	margin: auto;
+	font-size: 20px;
+	text-align: center;
+}
+
+table a,
+table a:link,
+table a:visited {
+	color: #bc8191;
+}
+
+td, th {
+	background-color: #a76375;
+	border: double 3px #953d50;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/*misc styles*/
+
+h1 {
+  background: -webkit-linear-gradient(#c13b5c, #eab0b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-stroke: 1px #952b3c;
+  -webkit-text-stroke: 1px #952b3c;
+  font-size: 130%;
+}
+
+h2 {
+	font-size: 125%;
+	background-color: #9f5263;
+	background-size: 100% auto;
+	color: #dbb3be;
+	border-top: dashed 1px #9a3a4a;
+	border-bottom: dashed 1px #9a3a4a;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+h4 {
+	font-size: 115%;
+}
+
+h5 {
+	font-size: 110%;
+}
+
+h6 {
+	font-size: 105%;
+}
+
+a {
+	color:#d9a5b3;
+	font-weight:normal;
+}
+
+a:hover {
+ color: #d9a5b3;
+ font-weight: normal;
+ text-decoration: none;
+ font-style: italic;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none; 
+  color: #d9a5b3;
+}
+
+::selection {
+  background: rgba(255,255,255,0);
+  color: #e6e4ce;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.heartbullets {
+	list-style: none;
+}
+
+ul.heartbullets li::before {
+	content: "\02765";
+}
+
+hr {
+	border: inset 2px #953d50;
+	width: 90%;
+}

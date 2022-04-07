@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>sangre's rss</title>
+    <link>https://kowakawaii.moe</link>
+    <description>updates on the site!</description>
+    <language>en-us</language>
+    <webMaster>sangredere@protonmail.com</webMaster>
+    <image>
+      <title>sangre's rss</title>
+      <link>https://kowakawaii.moe</link>
+      <url>https://kowakawaii.moe/images/meta.gif</url>
+      <width>100</width>
+      <height>120</height>
+    </image>
+	
+	
+	<!--divider-->
+    <item>
+      <title>test</title>
+      <pubDate>Fri, 23 Jul 2021 08:22:00 -0700</pubDate>
+      <link>https://kowakawaii.moe</link>
+      <guid>https://kowakawaii.moe</guid>
+      <author>sangredere@protonmail.com</author>
+      <category>test</category>
+      <description><![CDATA[<h1>this is a test</h1><br></br>
+	  <img ="https://kowakawaii.moe/images/screenshots/72321.png"><br>
+	  <p>just testing 2 see if this works!!</p>]]></description>
+    </item>
+
+<!-- TEMPLATE RSS FEED -->
+<!--item>
+<title>Article 1</title>
+<link>example.com/1</link>
+<guid> example.com/1</guid>
+<pubDate>Mon, 25 Nov 2013 15:10:45 GMT</pubDate>
+<description>My first article.</description>
+</item-->
+</channel>
+</rss>
+
+

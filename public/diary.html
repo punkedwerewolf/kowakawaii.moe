@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/frame.css" rel="stylesheet" type="text/css" media="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+  
+	<br>
+	<p><a href="javascript:history.back();"><img src="/images/back.png"></a>
+	&#x2740;
+    <a href="javascript:history.forward();"><img src="/images/forw.png"></a></p>
+	
+  <br>
+  <h1>&#9829; my diary &#9829;</h1>
+  <br>
+  <p>welcome to the page where i can tell you<br>everything that you didn't need to know!</p>
+  <br><br>
+  
+  <p>
+  <a class="previous"><img src="/images/diary/prev.png" class="paw"></a>
+  &#x2740;
+  <a class="next"><img src="/images/diary/next.png" class="paw"></a>
+  </p>
+  
+  <div class="page">
+  
+  <div class="form-panel active">
+       august 9, 2021
+     <br><br>
+	 happy stim moment
+     <br><br>
+	 i made a new anonymouse twitter account for a niche community, and god am i so glad i did this. i have met so many amazing people, gotten a new girlfriend, and made lots of self realizations.
+     <br><br>
+	 caitlin is the name of my nrew gf, she is from the uk but she makes up for it by being pretty, and protective of me which i rlly like. another person i met is bun/bunny, she is a chubby girl and SHEESH i wish i could cuddle with her she is so cute. weve called so much since we met. lastly is [REDACTED], he has the HOTTEST personality and the most SEXY specs. also his voice is nice yea.
+     <br><br>
+	 anyway im glad i decided to make the account bc ive made some amazing friends.
+	  </div>
+	  
+	  <div class="form-panel">
+       july 29, 2021
+		<br><br>
+      Kaiwa ga tsuzukanai na Naze da doushite da? Aho ka?
+	<br><br>
+	Soro de kaeru michisugara Aisatsu sae mo dekinai sa Mattemo sattemo kawaranai Sō da! kore kara da ze?
+	Netto de zenbu ga kanketsu de Koe wo dasu no mo hisashiburi Ame mo hare mo kawaranai Sōka! Warui no jibun ja nai
+	Hima da yo nanda yo deai ga nanda yo Honki wo dashitara motemakuru yo
+	<br><br>
+	Kagami yo kagami shōjiki waretai ka? “Iranai omae iranai” Kagami yo kagami shoujiki sugiru darō! “Kikoenai furi” Utsuranai no wa kokoro no utsukushisa “Mōsō sore wa mōsō” Utsutteru no wa saenai jibun dake “Genjitsu wo shire!”
+	<br><br>
+	Ashita mo onnaji kinō Naze da dōshite da? Aho da!
+	  </div>
+	  
+	  <div class="form-panel">
+       july 24, 2021
+     <br><br>
+      it's been raining...
+      <br><br>
+            I live in the west, I'm not sure if it's just my state, but we get a season of heavy rains and dust storms. When you disregard the dust storms it's actually really nice. I have my desk positioned by my window, and I get to watch the rain pour down onto the rocks near my house. It's very soothing and gives me the mood stabilization that I need. As I write, I'm actually watching the rain.
+	  <br><br>
+			It's been a long time since I've relapsed. This is a good thing, obviously, because I'm very prone to slicing myself up. I think this is because I haven't had a favorite person in a month or two, so I have no one to break down over. Let's hope I don't jinx this because I've been happy with my current streak.
+	  </div>
+	  
+	  <div class="form-panel">
+       this is the start of my diary! you've scrolled all the way back.
+	  </div>
+  
+  </div>
+  
+  <script>
+  
+$('.previous').click(function () {
+    var cur = $('.form-panel').index($('.form-panel.active'));
+    if (cur!=0) {
+        $('.form-panel').removeClass('active');
+        $('.form-panel').eq(cur-1).addClass('active');
+    }
+});
+$('.next').click(function () {
+    var cur = $('.form-panel').index($('.form-panel.active'));
+    if (cur!=$('.form-panel').length-1) {
+        $('.form-panel').removeClass('active');
+        $('.form-panel').eq(cur+1).addClass('active');
+    }
+});
+    
+  </script>
+  
+  </body>
+</html>
